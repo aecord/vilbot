@@ -1,0 +1,15 @@
+[project]
+name = "vilbot"
+version = "0.1.0"
+description = "vilbot aecord bot"
+authors = [
+    {name = "Alex Lipscomb", email = "aecord777@gmail.com"},
+]
+dependencies = []
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+
+
+[tool.pdm]
+distribution = false
