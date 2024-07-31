@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:11fe8272bb17448f6ca7bbc8b625dcfdad9149acb98e763faba27f1562bdd198"
+content_hash = "sha256:5fdd760128f33bdb7d6d0b029f08515f3c13b980508de9cc5a90e69e05f6db43"
 
 [[metadata.targets]]
 requires_python = "==3.11.*"
@@ -84,20 +84,6 @@ files = [
 ]
 
 [[package]]
-name = "discord-py"
-version = "2.4.0"
-requires_python = ">=3.8"
-summary = "A Python wrapper for the Discord API"
-groups = ["default"]
-dependencies = [
-    "aiohttp<4,>=3.7.4",
-]
-files = [
-    {file = "discord.py-2.4.0-py3-none-any.whl", hash = "sha256:b8af6711c70f7e62160bfbecb55be699b5cb69d007426759ab8ab06b1bd77d1d"},
-    {file = "discord_py-2.4.0.tar.gz", hash = "sha256:d07cb2a223a185873a1d0ee78b9faa9597e45b3f6186df21a95cec1e9bcdc9a5"},
-]
-
-[[package]]
 name = "frozenlist"
 version = "1.4.1"
 requires_python = ">=3.8"
@@ -158,6 +144,21 @@ files = [
     {file = "multidict-6.0.5-cp311-cp311-win_amd64.whl", hash = "sha256:2faa5ae9376faba05f630d7e5e6be05be22913782b927b19d12b8145968a85ea"},
     {file = "multidict-6.0.5-py3-none-any.whl", hash = "sha256:0d63c74e3d7ab26de115c49bffc92cc77ed23395303d496eae515d4204a625e7"},
     {file = "multidict-6.0.5.tar.gz", hash = "sha256:f7e301075edaf50500f0b341543c41194d8df3ae5caf4702f2095f3ca73dd8da"},
+]
+
+[[package]]
+name = "py-cord"
+version = "2.6.0"
+requires_python = ">=3.8"
+summary = "A Python wrapper for the Discord API"
+groups = ["default"]
+dependencies = [
+    "aiohttp<4.0,>=3.6.0",
+    "typing-extensions<5,>=4; python_version < \"3.11\"",
+]
+files = [
+    {file = "py_cord-2.6.0-py3-none-any.whl", hash = "sha256:906cc077904a4d478af0264ae4374b0412ed9f9ab950d0162c4f31239a906d26"},
+    {file = "py_cord-2.6.0.tar.gz", hash = "sha256:bbc0349542965d05e4b18cc4424136206430a8cc911fda12a0a57df6fdf9cd9c"},
 ]
 
 [[package]]

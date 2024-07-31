@@ -6,8 +6,8 @@ authors = [
     {name = "Alex Lipscomb", email = "aecord777@gmail.com"},
 ]
 dependencies = [
-    "discord-py>=2.4.0",
     "python-dotenv>=1.0.1",
+    "py-cord>=2.6.0",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
