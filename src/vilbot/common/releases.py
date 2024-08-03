@@ -37,7 +37,7 @@ AE_RARITIES_1992_2020: Release = Release(
     ],
 )
 
-INCUNABULE = Release(
+INCUNABULA = Release(
     title="Incunabula",
     year=1993,
     tracks=[
@@ -596,3 +596,41 @@ AE_LIVE_2016_2018 = Release(
         "AE_LIVE_OSLO_171116",
     ],
 )
+
+AE_RELEASES = [
+    AE_RARITIES_1992_2020,
+    INCUNABULA,
+    AMBER,
+    TRI_REPETAE,
+    CHIASTIC_SLIDE,
+    LP5,
+    CONFIELD,
+    DRAFT_7_30,
+    UNTILTED,
+    QUARISTICE,
+    OVERSTEPS,
+    EXAI,
+    ELSEQ_1_5,
+    NTS_SESSIONS_1_4,
+    WARP_TAPES_89_93,
+    SIGN,
+    PLUS,
+    CAVITY_JOB,
+    ANTI,
+    ANVIL_VAPRE,
+    GARBAGE,
+    KEYNELL_KEYNELL,
+    WE_R_ARE_WHY_ARE_Y_ARE_WE,
+    ENVANE,
+    CICHLISUITE,
+    EP7,
+    GANTZ_GRAF,
+    QUARISTICE,
+    QUARISTICE_QUADRANGE_EP_AE,
+    MOVE_OF_TEN,
+    L_EVENT,
+    JNSN_CODE_GL16_SPL47,
+    PEEL_SESSION,
+    AE_LIVE,
+    AE_LIVE_2016_2018,
+]
