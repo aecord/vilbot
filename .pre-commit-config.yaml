@@ -1,15 +1,15 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
     rev: v2.3.0
     hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
--   repo: https://github.com/psf/black
-    rev: 22.10.0
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: 'https://github.com/psf/black'
+    rev: 24.8.0
     hooks:
-    -   id: black
--  repo: https://github.com/DetachHead/basedpyright-pre-commit-mirror
-   rev: v1.13.0  # or whatever the latest version is at the time
-   hooks:
-   -    id: basedpyright
+      - id: black
+  - repo: 'https://github.com/DetachHead/basedpyright-pre-commit-mirror'
+    rev: 1.15.1
+    hooks:
+      - id: basedpyright

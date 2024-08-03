@@ -1,10 +1,10 @@
 from discord import ApplicationContext
 from discord.bot import Bot
+from discord.cog import Cog
 from discord.commands.permissions import (
     default_permissions,  # pyright: ignore[reportUnknownVariableType]
 )
 from discord.ext import commands
-from discord.cog import Cog
 
 from vilbot.cogs.meta.database_functions import update_releases
 from vilbot.common.db import connect

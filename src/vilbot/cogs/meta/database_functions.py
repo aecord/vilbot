@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 import asyncpg
+
 from vilbot.common.releases import AE_RELEASES
 
 

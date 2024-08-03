@@ -1,8 +1,9 @@
 import logging
 import os
-from dotenv import load_dotenv
+
 from discord import ApplicationContext
 from discord.ext import bridge, commands
+from dotenv import load_dotenv
 
 from vilbot.log_config import configure_logger
 
