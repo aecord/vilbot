@@ -18,7 +18,7 @@ class Release(TypedDict):
     tracks: list[str]
 
 
-AE_RARITIES_1992_2020: Release = Release(
+AE_RARITIES_1992_2020 = Release(
     title="AE_RARITIES 1992-2020",
     type=ReleaseType.BOOTLEG,
     year=2020,
