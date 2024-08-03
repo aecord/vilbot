@@ -21,3 +21,6 @@ down:
 
 logs:
 	docker compose logs
+
+connect:
+	docker compose exec db psql -U postgres -d vilbot

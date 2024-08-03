@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "python-dotenv>=1.0.1",
     "py-cord>=2.6.0",
+    "asyncpg>=0.29.0",
+    "asyncpg-stubs>=0.29.1",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
@@ -25,7 +27,7 @@ dev = [
     "pre-commit>=3.8.0",
 ]
 
-[tool.pyright]
+[tool.basedpyright]
 include = ["public"]
 exclude = ["**/__pycache__", "__pypackages__", ".venv"]
 venvPath = "."

@@ -1,9 +1,9 @@
-CREATE TYPE release_type AS ENUM ('album', 'ep', 'single', 'live');
+CREATE TYPE release_type AS ENUM ('album', 'ep', 'single', 'live', 'compilation', 'bootleg');
 
 CREATE TABLE IF NOT EXISTS Release (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
-  release_date DATE NOT NULL,
+  release_date INTEGER NOT NULL,
   release_type release_type NOT NULL
 );
 

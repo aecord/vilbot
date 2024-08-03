@@ -1,14 +1,26 @@
+from enum import Enum
 from typing import TypedDict
+
+
+class ReleaseType(Enum):
+    ALBUM = "album"
+    EP = "ep"
+    SINGLE = "single"
+    LIVE = "live"
+    COMPILATION = "compilation"
+    BOOTLEG = "bootleg"
 
 
 class Release(TypedDict):
     title: str
+    type: ReleaseType
     year: int
     tracks: list[str]
 
 
 AE_RARITIES_1992_2020: Release = Release(
     title="AE_RARITIES 1992-2020",
+    type=ReleaseType.BOOTLEG,
     year=2020,
     tracks=[
         "The Egg",
@@ -39,6 +51,7 @@ AE_RARITIES_1992_2020: Release = Release(
 
 INCUNABULA = Release(
     title="Incunabula",
+    type=ReleaseType.ALBUM,
     year=1993,
     tracks=[
         "Kalpol Introl",
@@ -57,6 +70,7 @@ INCUNABULA = Release(
 
 AMBER = Release(
     title="Amber",
+    type=ReleaseType.ALBUM,
     year=1994,
     tracks=[
         "Foil",
@@ -75,6 +89,7 @@ AMBER = Release(
 
 TRI_REPETAE = Release(
     title="Tri Repetae",
+    type=ReleaseType.ALBUM,
     year=1995,
     tracks=[
         "Dael",
@@ -92,6 +107,7 @@ TRI_REPETAE = Release(
 
 CHIASTIC_SLIDE = Release(
     title="Chiastic Slide",
+    type=ReleaseType.ALBUM,
     year=1996,
     tracks=[
         "Cipater",
@@ -108,6 +124,7 @@ CHIASTIC_SLIDE = Release(
 
 LP5 = Release(
     title="LP5",
+    type=ReleaseType.ALBUM,
     year=1998,
     tracks=[
         "AcroyearII",
@@ -126,6 +143,7 @@ LP5 = Release(
 
 CONFIELD = Release(
     title="Confield",
+    type=ReleaseType.ALBUM,
     year=2001,
     tracks=[
         "VI Scose Poise",
@@ -142,6 +160,7 @@ CONFIELD = Release(
 
 DRAFT_7_30 = Release(
     title="Draft 7.30",
+    type=ReleaseType.ALBUM,
     year=2003,
     tracks=[
         "Xylin Room",
@@ -159,6 +178,7 @@ DRAFT_7_30 = Release(
 
 UNTILTED = Release(
     title="Untilted",
+    type=ReleaseType.ALBUM,
     year=2005,
     tracks=[
         "LCC",
@@ -174,6 +194,7 @@ UNTILTED = Release(
 
 QUARISTICE = Release(
     title="Quaristice",
+    type=ReleaseType.ALBUM,
     year=2008,
     tracks=[
         "Altibzz",
@@ -201,6 +222,7 @@ QUARISTICE = Release(
 
 OVERSTEPS = Release(
     title="Oversteps",
+    type=ReleaseType.ALBUM,
     year=2010,
     tracks=[
         "r ess",
@@ -222,6 +244,7 @@ OVERSTEPS = Release(
 
 EXAI = Release(
     title="Exai",
+    type=ReleaseType.ALBUM,
     year=2013,
     tracks=[
         "FLeure",
@@ -246,6 +269,7 @@ EXAI = Release(
 
 ELSEQ_1_5 = Release(
     title="elseq 1-5",
+    type=ReleaseType.ALBUM,
     year=2016,
     tracks=[
         "feed1",
@@ -274,6 +298,7 @@ ELSEQ_1_5 = Release(
 
 NTS_SESSIONS_1_4 = Release(
     title="NTS Sessions 1-4",
+    type=ReleaseType.ALBUM,
     year=2018,
     tracks=[
         "t1a1",
@@ -317,6 +342,7 @@ NTS_SESSIONS_1_4 = Release(
 
 WARP_TAPES_89_93 = Release(
     title="Warp Tapes 89-93",
+    type=ReleaseType.ALBUM,
     year=2019,
     tracks=[
         "Warp Tapes 89-93 Part 1",
@@ -326,6 +352,7 @@ WARP_TAPES_89_93 = Release(
 
 SIGN = Release(
     title="SIGN",
+    type=ReleaseType.ALBUM,
     year=2020,
     tracks=[
         "M4 Lema",
@@ -344,6 +371,7 @@ SIGN = Release(
 
 PLUS = Release(
     title="Plus",
+    type=ReleaseType.ALBUM,
     year=2020,
     tracks=[
         "DekDre Scap B",
@@ -360,6 +388,7 @@ PLUS = Release(
 
 CAVITY_JOB = Release(
     title="Cavity Job",
+    type=ReleaseType.SINGLE,
     year=1991,
     tracks=[
         "Cavity Job",
@@ -369,6 +398,7 @@ CAVITY_JOB = Release(
 
 ANTI = Release(
     title="Anti",
+    type=ReleaseType.EP,
     year=1994,
     tracks=[
         "Lost",
@@ -379,6 +409,7 @@ ANTI = Release(
 
 ANVIL_VAPRE = Release(
     title="Anvil Vapre",
+    type=ReleaseType.EP,
     year=1995,
     tracks=[
         "Second Bad Vilbel",
@@ -390,6 +421,7 @@ ANVIL_VAPRE = Release(
 
 GARBAGE = Release(
     title="Garbage",
+    type=ReleaseType.EP,
     year=1995,
     tracks=[
         "Garbagemx",
@@ -399,10 +431,13 @@ GARBAGE = Release(
     ],
 )
 
-KEYNELL_KEYNELL = Release(title="Keynell / Keynell", year=1996, tracks=["Keynell"])
+KEYNELL_KEYNELL = Release(
+    title="Keynell / Keynell", type=ReleaseType.SINGLE, year=1996, tracks=["Keynell"]
+)
 
 WE_R_ARE_WHY_ARE_Y_ARE_WE = Release(
     title="We R Are Why / Are Y Are We?",
+    type=ReleaseType.SINGLE,
     year=1996,
     tracks=[
         "We R Are Why",
@@ -412,6 +447,7 @@ WE_R_ARE_WHY_ARE_Y_ARE_WE = Release(
 
 ENVANE = Release(
     title="Envane",
+    type=ReleaseType.EP,
     year=1997,
     tracks=[
         "Goz Quarter",
@@ -423,6 +459,7 @@ ENVANE = Release(
 
 CICHLISUITE = Release(
     title="Cichlisuite",
+    type=ReleaseType.EP,
     year=1997,
     tracks=[
         "Yeesland",
@@ -435,6 +472,7 @@ CICHLISUITE = Release(
 
 EP7 = Release(
     title="EP7",
+    type=ReleaseType.EP,
     year=1999,
     tracks=[
         "Untitled",
@@ -455,6 +493,7 @@ EP7 = Release(
 
 GANTZ_GRAF = Release(
     title="Gantz Graf",
+    type=ReleaseType.EP,
     year=2002,
     tracks=[
         "Gantz Graf",
@@ -465,6 +504,7 @@ GANTZ_GRAF = Release(
 
 QUARISTICE_VERSIONS = Release(
     title="Quaristice (Versions)",
+    type=ReleaseType.EP,
     year=2008,
     tracks=[
         "Altichyre",
@@ -483,6 +523,7 @@ QUARISTICE_VERSIONS = Release(
 
 QUARISTICE_QUADRANGE_EP_AE = Release(
     title="Quaristice.Quadrange.ep.ae",
+    type=ReleaseType.EP,
     year=2008,
     tracks=[
         "The Plc ccc",
@@ -503,6 +544,7 @@ QUARISTICE_QUADRANGE_EP_AE = Release(
 
 MOVE_OF_TEN = Release(
     title="Move Of Ten",
+    type=ReleaseType.EP,
     year=2010,
     tracks=[
         "Etchogon-S",
@@ -520,6 +562,7 @@ MOVE_OF_TEN = Release(
 
 L_EVENT = Release(
     title="L-event",
+    type=ReleaseType.EP,
     year=2013,
     tracks=[
         "tac Lacora",
@@ -531,6 +574,7 @@ L_EVENT = Release(
 
 JNSN_CODE_GL16_SPL47 = Release(
     title="JNSN CODE GL16 / spl47",
+    type=ReleaseType.SINGLE,
     year=2017,
     tracks=[
         "JNSN CODE GL16",
@@ -540,6 +584,7 @@ JNSN_CODE_GL16_SPL47 = Release(
 
 PEEL_SESSION = Release(
     title="Peel Session",
+    type=ReleaseType.EP,
     year=1999,
     tracks=[
         "Milk DX",
@@ -550,6 +595,7 @@ PEEL_SESSION = Release(
 
 AE_LIVE = Release(
     title="AE_LIVE",
+    type=ReleaseType.LIVE,
     year=2015,
     tracks=[
         "AE_LIVE_KRAKOW_200914",
@@ -585,6 +631,7 @@ AE_LIVE = Release(
 
 AE_LIVE_2016_2018 = Release(
     title="AE_LIVE 2016/2018",
+    type=ReleaseType.LIVE,
     year=2020,
     tracks=[
         "AE_LIVE_ZAGREB_061116",
