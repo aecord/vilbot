@@ -13,7 +13,7 @@ up:
 local:
 	pdm run python -m vilbot
 
-stop: 
+stop:
 	docker compose stop
 
 down:
