@@ -9,7 +9,7 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "py-cord>=2.6.0",
 ]
-requires-python = "==3.11.*"
+requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "GPL-3.0-or-later"}
 
