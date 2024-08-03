@@ -1,13 +1,13 @@
+import discord
 from discord import ApplicationContext
-from discord.ext import commands
-from discord.ext.commands import Cog
+from discord.bot import Bot
+from discord.cog import Cog
 
 
 class ExampleCog(Cog):
-    def __init__(self, bot):
+    def __init__(self, bot: Bot):
         self.bot = bot
 
-    @commands.slash_command(name="example")
+    @discord.slash_command(name="example")  # type: ignore[reportUnknownMemberType]
     async def example_slash(self, ctx: ApplicationContext):
-        await ctx.respond("Slash commands are working")
-
+        _ = await ctx.respond("Slash commands are working")

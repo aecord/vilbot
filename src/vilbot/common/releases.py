@@ -1,7 +1,16 @@
-{
-  "albums": {
-    "AE_RARITIES 1992-2020": {
-      "tracks": [
+from typing import TypedDict
+
+
+class Release(TypedDict):
+    title: str
+    year: int
+    tracks: list[str]
+
+
+AE_RARITIES_1992_2020: Release = Release(
+    title="AE_RARITIES 1992-2020",
+    year=2020,
+    tracks=[
         "The Egg",
         "Crystel",
         "Chatter",
@@ -24,12 +33,14 @@
         "18 (keyosc)",
         "sinistrail sentinel",
         "p1p2",
-        "n Cur"
-      ],
-      "Year": 2020
-    },
-    "Incunabula": {
-      "tracks": [
+        "n Cur",
+    ],
+)
+
+INCUNABULE = Release(
+    title="Incunabula",
+    year=1993,
+    tracks=[
         "Kalpol Introl",
         "Bike",
         "Autriche",
@@ -40,12 +51,14 @@
         "Maetl",
         "Windwind",
         "Lowride",
-        "444"
-      ],
-      "Year": 1993
-    },
-    "Amber": {
-      "tracks": [
+        "444",
+    ],
+)
+
+AMBER = Release(
+    title="Amber",
+    year=1994,
+    tracks=[
         "Foil",
         "Montreal",
         "Silverside",
@@ -56,12 +69,14 @@
         "Further",
         "Yulquen",
         "Nil",
-        "Teartear"
-      ],
-      "Year": 1994
-    },
-    "Tri Repetae": {
-      "tracks": [
+        "Teartear",
+    ],
+)
+
+TRI_REPETAE = Release(
+    title="Tri Repetae",
+    year=1995,
+    tracks=[
         "Dael",
         "Clipper",
         "Leterel",
@@ -71,12 +86,14 @@
         "C/Pach",
         "Gnit",
         "Overand",
-        "Rsdio"
-      ],
-      "Year": 1995
-    },
-    "Chiastic Slide": {
-      "tracks": [
+        "Rsdio",
+    ],
+)
+
+CHIASTIC_SLIDE = Release(
+    title="Chiastic Slide",
+    year=1996,
+    tracks=[
         "Cipater",
         "Rettic AC",
         "Tewe",
@@ -85,12 +102,14 @@
         "Calbruc",
         "Recury",
         "Pule",
-        "Nuane"
-      ],
-      "Year": 1996
-    },
-    "LP5": {
-      "tracks": [
+        "Nuane",
+    ],
+)
+
+LP5 = Release(
+    title="LP5",
+    year=1998,
+    tracks=[
         "AcroyearII",
         "777",
         "Rae",
@@ -101,12 +120,14 @@
         "Corc",
         "Caliper Remote",
         "Arch Carrier",
-        "Drane2"
-      ],
-      "Year": 1998
-    },
-    "Confield": {
-      "tracks": [
+        "Drane2",
+    ],
+)
+
+CONFIELD = Release(
+    title="Confield",
+    year=2001,
+    tracks=[
         "VI Scose Poise",
         "Cfern",
         "Pen Expers",
@@ -115,12 +136,14 @@
         "Bine",
         "Eidetic Casein",
         "Uviol",
-        "Lentic Catachresis"
-      ],
-      "Year": 2001
-    },
-    "Draft 7.30": {
-      "tracks": [
+        "Lentic Catachresis",
+    ],
+)
+
+DRAFT_7_30 = Release(
+    title="Draft 7.30",
+    year=2003,
+    tracks=[
         "Xylin Room",
         "IV VV IV VV VIII",
         "6IE.CR",
@@ -130,12 +153,14 @@
         "VL AL 5",
         "P.:NTIL",
         "V-Proc",
-        "Reniform Puls"
-      ],
-      "Year": 2003
-    },
-    "Untilted": {
-      "tracks": [
+        "Reniform Puls",
+    ],
+)
+
+UNTILTED = Release(
+    title="Untilted",
+    year=2005,
+    tracks=[
         "LCC",
         "Ipacial Section",
         "Pro Radii",
@@ -143,12 +168,14 @@
         "Iera",
         "Fermium",
         "The Trees",
-        "Sublimit"
-      ],
-      "Year": 2005
-    },
-    "Quaristice": {
-      "tracks": [
+        "Sublimit",
+    ],
+)
+
+QUARISTICE = Release(
+    title="Quaristice",
+    year=2008,
+    tracks=[
         "Altibzz",
         "The Plc",
         "IO",
@@ -168,12 +195,14 @@
         "WNSN",
         "chenc9",
         "Notwo",
-        "Outh9X"
-      ],
-      "Year": 2008
-    },
-    "Oversteps": {
-      "tracks": [
+        "Outh9X",
+    ],
+)
+
+OVERSTEPS = Release(
+    title="Oversteps",
+    year=2010,
+    tracks=[
         "r ess",
         "ilanders",
         "known(1)",
@@ -187,12 +216,14 @@
         "st epreo",
         "redfall",
         "krYlon",
-        "Yuop"
-      ],
-      "Year": 2010
-    },
-    "Exai": {
-      "tracks": [
+        "Yuop",
+    ],
+)
+
+EXAI = Release(
+    title="Exai",
+    year=2013,
+    tracks=[
         "FLeure",
         "irlite (get 0)",
         "prac-f",
@@ -209,12 +240,14 @@
         "cloudline",
         "deco Loc",
         "recks on",
-        "YJY UX"
-      ],
-      "Year": 2013
-    },
-    "elseq 1-5": {
-      "tracks": [
+        "YJY UX",
+    ],
+)
+
+ELSEQ_1_5 = Release(
+    title="elseq 1-5",
+    year=2016,
+    tracks=[
         "feed1",
         "c16 deep tread",
         "13x0 step",
@@ -235,12 +268,14 @@
         "spTh",
         "spaces how V",
         "freulaeux",
-        "oneum"
-      ],
-      "Year": 2016
-    },
-    "NTS Sessions 1-4": {
-      "tracks": [
+        "oneum",
+    ],
+)
+
+NTS_SESSIONS_1_4 = Release(
+    title="NTS Sessions 1-4",
+    year=2018,
+    tracks=[
         "t1a1",
         "bqbqbq",
         "debris_funk",
@@ -276,19 +311,23 @@
         "mirrage",
         "column thirteen",
         "shimripl casual",
-        "all end"
-      ],
-      "Year": 2018
-    },
-    "Warp Tapes 89-93": {
-      "tracks": [
+        "all end",
+    ],
+)
+
+WARP_TAPES_89_93 = Release(
+    title="Warp Tapes 89-93",
+    year=2019,
+    tracks=[
         "Warp Tapes 89-93 Part 1",
-        "Warp Tapes 89-93 Part 2"
-      ],
-      "Year": 2019
-    },
-    "SIGN": {
-      "tracks": [
+        "Warp Tapes 89-93 Part 2",
+    ],
+)
+
+SIGN = Release(
+    title="SIGN",
+    year=2020,
+    tracks=[
         "M4 Lema",
         "F7",
         "si00",
@@ -299,12 +338,14 @@
         "gr4",
         "th red a",
         "psin AM",
-        "r cazt"
-      ],
-      "Year": 2020
-    },
-    "PLUS": {
-      "tracks": [
+        "r cazt",
+    ],
+)
+
+PLUS = Release(
+    title="Plus",
+    year=2020,
+    tracks=[
         "DekDre Scap B",
         "7FM ic",
         "marhide",
@@ -313,79 +354,89 @@
         "X4",
         "ii.pre esc",
         "esle 0",
-        "TM1 open"
-      ],
-      "Year": 2020
-    }
-  },
-  "eps": {
-    "Cavity Job": {
-      "tracks": [
+        "TM1 open",
+    ],
+)
+
+CAVITY_JOB = Release(
+    title="Cavity Job",
+    year=1991,
+    tracks=[
         "Cavity Job",
-        "Accelera 1 & 2"
-      ],
-      "Year": 1991
-    },
-    "Anti": {
-      "tracks": [
+        "Accelera 1 & 2",
+    ],
+)
+
+ANTI = Release(
+    title="Anti",
+    year=1994,
+    tracks=[
         "Lost",
         "Djarum",
-        "Flutter"
-      ],
-      "Year": 1994
-    },
-    "Anvil Vapre": {
-      "tracks": [
+        "Flutter",
+    ],
+)
+
+ANVIL_VAPRE = Release(
+    title="Anvil Vapre",
+    year=1995,
+    tracks=[
         "Second Bad Vilbel",
         "Second Scepe",
         "Second Scout",
-        "Second Peng"
-      ],
-      "Year": 1995
-    },
-    "Garbage": {
-      "tracks": [
+        "Second Peng",
+    ],
+)
+
+GARBAGE = Release(
+    title="Garbage",
+    year=1995,
+    tracks=[
         "Garbagemx",
         "PIOBmx",
         "Bronchusevenmx",
-        "VLetrmx"
-      ],
-      "Year": 1995
-    },
-    "Keynell / Keynell": {
-      "tracks": [
-        "Keynell"
-      ],
-      "Year": 1996
-    },
-    "We R Are Why / Are Y Are We?": {
-      "tracks": [
+        "VLetrmx",
+    ],
+)
+
+KEYNELL_KEYNELL = Release(title="Keynell / Keynell", year=1996, tracks=["Keynell"])
+
+WE_R_ARE_WHY_ARE_Y_ARE_WE = Release(
+    title="We R Are Why / Are Y Are We?",
+    year=1996,
+    tracks=[
         "We R Are Why",
-        "Are Y Are We?"
-      ],
-      "Year": 1996
-    },
-    "Envane": {
-      "tracks": [
+        "Are Y Are We?",
+    ],
+)
+
+ENVANE = Release(
+    title="Envane",
+    year=1997,
+    tracks=[
         "Goz Quarter",
         "Latent Quarter",
         "Laughing Quarter",
-        "Draun Quarter"
-      ],
-      "Year": 1997
-    },
-    "Cichlisuite": {
-      "tracks": [
+        "Draun Quarter",
+    ],
+)
+
+CICHLISUITE = Release(
+    title="Cichlisuite",
+    year=1997,
+    tracks=[
         "Yeesland",
         "Pencha",
         "Characi",
         "Krib",
-        "Tilapia"
-      ],
-      "Year": 1997
-    },
-    "EP7": {
-      "tracks": [
+        "Tilapia",
+    ],
+)
+
+EP7 = Release(
+    title="EP7",
+    year=1999,
+    tracks=[
         "Untitled",
         "(silence)",
         "Rpeg",
@@ -398,20 +449,24 @@
         "Maphive 6.1",
         "Zeiss Contarex",
         "Netlon Sentinel",
-        "Pir"
-      ],
-      "Year": 1999
-    },
-    "Gantz Graf": {
-      "tracks": [
+        "Pir",
+    ],
+)
+
+GANTZ_GRAF = Release(
+    title="Gantz Graf",
+    year=2002,
+    tracks=[
         "Gantz Graf",
         "Dial.",
-        "Cap.IV"
-      ],
-      "Year": 2002
-    },
-    "Quaristice (Versions)": {
-      "tracks": [
+        "Cap.IV",
+    ],
+)
+
+QUARISTICE_VERSIONS = Release(
+    title="Quaristice (Versions)",
+    year=2008,
+    tracks=[
         "Altichyre",
         "The PlclCpC",
         "IO (mons)",
@@ -422,12 +477,14 @@
         "fol4",
         "90101-61-01",
         "chenc9-x",
-        "nofour"
-      ],
-      "Year": 2008
-    },
-    "Quaristice.Quadrange.ep.ae": {
-      "tracks": [
+        "nofour",
+    ],
+)
+
+QUARISTICE_QUADRANGE_EP_AE = Release(
+    title="Quaristice.Quadrange.ep.ae",
+    year=2008,
+    tracks=[
         "The Plc ccc",
         "Perlence range 7",
         "Perlence Suns",
@@ -440,12 +497,14 @@
         "9010171-121",
         "Perlence losid 2",
         "notwotwo",
-        "Perlence subrange 6-36"
-      ],
-      "Year": 2008
-    },
-    "Move Of Ten": {
-      "tracks": [
+        "Perlence subrange 6-36",
+    ],
+)
+
+MOVE_OF_TEN = Release(
+    title="Move Of Ten",
+    year=2010,
+    tracks=[
         "Etchogon-S",
         "y7",
         "pce freeze 2.8i",
@@ -455,38 +514,44 @@
         "no border",
         "M62",
         "ylm0",
-        "Cep puiqMX"
-      ],
-      "Year": 2010
-    },
-    "L-event": {
-      "tracks": [
+        "Cep puiqMX",
+    ],
+)
+
+L_EVENT = Release(
+    title="L-event",
+    year=2013,
+    tracks=[
         "tac Lacora",
         "M39 Diffain",
         "Osla for n",
-        "newbound"
-      ],
-      "Year": 2013
-    },
-    "JNSN CODE GL16 / spl47": {
-      "tracks": [
+        "newbound",
+    ],
+)
+
+JNSN_CODE_GL16_SPL47 = Release(
+    title="JNSN CODE GL16 / spl47",
+    year=2017,
+    tracks=[
         "JNSN CODE GL16",
-        "spl47"
-      ],
-      "Year": 2017
-    },
-    "Peel Session": {
-      "tracks": [
+        "spl47",
+    ],
+)
+
+PEEL_SESSION = Release(
+    title="Peel Session",
+    year=1999,
+    tracks=[
         "Milk DX",
         "Inhake 2",
-        "Drane"
-      ],
-      "Year": 1999
-    }
-  },
-  "live": {
-    "AE_LIVE": {
-      "tracks": [
+        "Drane",
+    ],
+)
+
+AE_LIVE = Release(
+    title="AE_LIVE",
+    year=2015,
+    tracks=[
         "AE_LIVE_KRAKOW_200914",
         "AE_LIVE_BRUSSELS_031014",
         "AE_LIVE_UTRECHT_221114",
@@ -514,21 +579,20 @@
         "AE_LIVE_AUSTIN_131015",
         "AE_LIVE_LOS_ANGELES_151015",
         "AE_LIVE_SAN_FRANCISCO_161015",
-        "AE_LIVE_DENVER_171015"
-      ],
-      "Year": 2015
-    },
-    "AE_LIVE 2016/2018": {
-      "tracks": [
+        "AE_LIVE_DENVER_171015",
+    ],
+)
+
+AE_LIVE_2016_2018 = Release(
+    title="AE_LIVE 2016/2018",
+    year=2020,
+    tracks=[
         "AE_LIVE_ZAGREB_061116",
         "AE_LIVE_MELBOURNE_210618",
         "AE_LIVE_TALLINN_131116",
         "AE_LIVE_NIJMEGEN_221116",
         "AE_LIVE_HELSINKI_141116",
         "AE_LIVE_DUBLIN_150718",
-        "AE_LIVE_OSLO_171116"
-      ],
-      "Year": 2020
-    }
-  }
-}
+        "AE_LIVE_OSLO_171116",
+    ],
+)
