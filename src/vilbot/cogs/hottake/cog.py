@@ -31,6 +31,6 @@ class Hottake(Cog):
 
         formatted_text = "Top 10 Autechre Tracks:\n"
         for i, track in enumerate(top_ten, start=1):
-            formatted_text += f"{i}: {track}\n"
+            formatted_text += f"{11-i}: {track}\n"
 
         _ = await ctx.respond(formatted_text)
